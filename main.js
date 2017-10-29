@@ -14,11 +14,19 @@ $(document).ready(function(){
 
 
 
+//Pro slider
+
 $(document).ready(function(){
   $('.pros__slider').slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    infinite: false,
+    slidesToScroll: 1
   });
 });
+
+
+//Remove focus from inputs etc.
+
+$("button").mouseup(function(){
+    $(this).blur();
+})
