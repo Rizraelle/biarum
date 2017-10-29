@@ -1,0 +1,29 @@
+{
+  "name": "biarum__test",
+  "version": "1.0.0",
+  "description": "Test work for biarum",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rizraelle/biarum.git"
+  },
+  "author": "Rizraelle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rizraelle/biarum/issues"
+  },
+  "homepage": "https://github.com/Rizraelle/biarum#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "postcss-nested": "^2.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-postcss": "^7.0.0",
+    "postcss-nested": "^2.1.2"
+  }
+}
