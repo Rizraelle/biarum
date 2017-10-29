@@ -20,7 +20,17 @@ $(document).ready(function(){
   $('.pros__slider').slick({
     slidesToShow: 3,
     infinite: false,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ],
   });
 });
 
@@ -30,3 +40,23 @@ $(document).ready(function(){
 $("button").mouseup(function(){
     $(this).blur();
 })
+
+
+//Navbar
+
+
+function addClass() {
+  document.getElementById("elem").classList.add("active");
+};
+
+function removeClass() {
+  document.getElementById("elem").classList.remove("active");
+};
+
+function checkClass() {
+  if (document.getElementById("elem").classList.contains("active")) {
+    removeClass();
+  } else {
+    addClass();
+  }
+};

@@ -127,6 +127,43 @@ HEADER
 	}
 }
 
+.navbar-button {
+	display: none;
+	color: #FFF;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+@media (max-width: 1110px) {
+
+	.navbar-button {
+		display: block;
+	}
+
+	.header__navbar {
+    display: flex;
+	  justify-content: center;
+  	position: absolute;
+  	top: -420px;
+  	left: 0;
+  	width: 100%;
+  	max-width: 100%;
+  	transition: all 0.1s ease-out;
+  	z-index: 1;
+  }
+
+  .header__navbar.active {
+  	top: 68px;
+	  background-color: #3F4049;
+  }
+
+  .header__navbar-block { 
+    display: block;
+    width: 100%;
+    height: 50px;
+  }
+}
+
 
 
 
@@ -225,7 +262,7 @@ PROS
 
 .pros__container {
 	min-height: 800px;
-	min-height: 800px;
+	max-height: 1000px;
 	max-width: 1300px;
 	margin: 0 auto;
 	background-image: url(../img/pros.jpg);
@@ -252,8 +289,8 @@ PROS
 }
 
 .pros__slide {
-	width: 320px;
-	min-height: 800px;
+	max-width: 320px;
+	min-height: 600px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -357,6 +394,10 @@ FOOTER
 	background-image: url(../img/spray.jpg);
 	background-size: cover;
 	padding-top: 70px;
+
+	@media (max-width: 1020px) {
+	  height: 1100px;
+	}
 }
 
 .footer {
@@ -384,6 +425,12 @@ FOOTER
 	height: 400px;
 	background-color: #FFF;
 	padding: 40px;
+
+	
+	@media (max-width: 1020px) {
+	  min-width: 320px;
+	  height: 900px;
+	}
 }
 
 .footer__main-container {
@@ -394,6 +441,10 @@ FOOTER
   position: relative;
   max-width: 700px;
   margin: auto;
+
+  @media (max-width: 1020px) {
+    align-items: center;
+	}
 }
 
 .footer__main p {
@@ -408,7 +459,7 @@ FOOTER
 	left: 0;
 
 	@media (max-width: 1020px) {
-		position: ;
+		position: inherit;
 	}
 }
 
@@ -419,6 +470,10 @@ FOOTER
   align-items: flex-end;
   width: 70%;
   padding-top: 70px;
+
+  @media (max-width: 1020px) {
+    align-items: center;
+	}
 }
 
 .footer__main-form {
@@ -437,6 +492,7 @@ FOOTER
 	min-width: 300px;
 	padding: 12px;
   color: #6E6C6C;
+  margin-top: 10px;
 
 
 	&::-webkit-input-placeholder {
