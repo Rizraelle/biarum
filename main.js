@@ -23,7 +23,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1050,
         settings: {
           infinite: false,
           slidesToShow: 1,
